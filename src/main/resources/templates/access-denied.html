@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+  <meta charset="UTF-8">
+  <title>ErrorPage</title>
+</head>
+<body>
+
+<h2>Access Denied - You don't have enough rights</h2>
+<hr>
+<p>
+  <a th:href="@{/home}">Back HomePage</a>
+</p>
+<br/>
+<form action="#" th:action="@{/logout}" method="POST">
+  <input type="submit" value="Logout!">
+</form>
+
+</body>
+</html>
